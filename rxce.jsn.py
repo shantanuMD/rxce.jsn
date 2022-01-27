@@ -4,9 +4,7 @@
 
 
     
-            for c in itertools.cycle(['|', '/', '-', '\\']) :
-                if done:
-                    break
+            
                 sys.stdout.write('\rhacking in the parity server for next colour--------- ' + c)
                 sys.stdout.flush()
                 time.sleep(0.1)
@@ -21,9 +19,7 @@
 
     
         
-            for c in itertools.cycle(['|', '/', '-', '\\']):
-                if done:
-                    break
+            
                 sys.stdout.write('\rgetting the colour wait --------- ' + c)
                 sys.stdout.flush()
                 time.sleep(0.1)
@@ -36,7 +32,7 @@
         time.sleep(20)
         done = True
 
-    def clear():
+    
         # for windows
         if name == 'nt':
             _ = system('cls')
